@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <com.slow.gameview.Joystick
+        android:id="@+id/joystick"
+        android:layout_width="102dp"
+        android:layout_height="93dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+
+
+        android:background="@drawable/ui_pic_joystick_right_pad"
+        app:force_square="true"
+        app:motion_constraint="None"
+        app:start_on_first_touch="true">
+
+        <Button
+            android:layout_width="@dimen/stick_size"
+            android:layout_height="@dimen/stick_size"
+            android:background="@drawable/ui_pic_joystick_control_ball"
+
+            />
+
+    </com.slow.gameview.Joystick>
+
+    <com.slow.gameview.MyView
+        android:id="@+id/myView"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:id="@+id/btnSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="加速"
+        android:background="@drawable/ui_pic_joystick_control_ball"
+        />
+
+
+</RelativeLayout>
